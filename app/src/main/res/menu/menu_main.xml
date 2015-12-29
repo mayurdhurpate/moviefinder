@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="me.quriosity15.moviefinder.MainActivity">
+    <item android:id="@+id/action_sort"
+        android:title="@string/action_spinner"
+        android:icon="@drawable/ic_sort"
+        app:showAsAction="ifRoom"
+        app:actionViewClass="android.support.v7.widget.AppCompatSpinner" />
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+</menu>
