@@ -1,6 +1,6 @@
-# Movie Finder
+# Movie Finder [UPDATE 1]
 Movie Finder app. Part 1
-Pleae add theMovieDb API key at line 38, in MainActivityFragment.java file.
+Please add theMovieDb API key at line 38, in MainActivityFragment.java file.
 Waiting eagerly for your feedback. 
 
 #P.S. 
