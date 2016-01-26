@@ -35,7 +35,7 @@ public class MainActivityFragment extends Fragment {
     public  static String TAG = "MainActivityFragment";
     public static int sortType = 0;
     private GridView mGridView;
-    private static String apiKey = "--------------------ENTER API KEY HERE-----------------";
+    private static String apiKey = "---------api key---------------";
     private static String sortByPopularity = "popularity.desc";
     private static String sortByRating = "vote_average.desc";
     public static String moviePosition = "movie_position" ;
@@ -206,17 +206,17 @@ public class MainActivityFragment extends Fragment {
             movieCursorAdapter.swapCursor(movieCursor);
 
             movieCursor.moveToFirst();
-            if (movieCursor != null) {
+            if (movieCursor.getCount() > 0) {
                 do {
                     for (int i = 0; i < movieCursor.getColumnCount(); i++) {
-
                         Log.v("LOG Database", movieCursor.getColumnName(i)+": " + movieCursor.getString(i));
                     }
                 }while (movieCursor.moveToNext());
             }
             else {
                 Log.e("mm", "No data" );
-
+                Toast.makeText(getActivity(), "Error fetching data. Please check your internet connection and try again.",
+                        Toast.LENGTH_LONG).show();
             }
 //            movieCursor.close();
 
